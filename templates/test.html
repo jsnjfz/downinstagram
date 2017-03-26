@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+            <form id="form1" action="/download_pre/" method="get" >
+                        <div class="main_input_wrapper">
+                            <input autofocus="" placeholder="https://instagram.com/p/41SW_pmmq4/" name="url" value="">
+                        </div>
+
+              <input type="submit" value="下载" >
+
+            </form>
+</body>
+        <script>
+
+        $("#form1").submit(function() {
+            alert('111111');
+            $.ajax({
+                data: $(this).serialize(),
+                type: $(this).attr('method'),
+                url: $(this).attr('action'),
+                success: function(response) {
+
+                    $("#main_form").html("111");
+                }
+            });
+            return false;
+        });
+    </script>
+</html>

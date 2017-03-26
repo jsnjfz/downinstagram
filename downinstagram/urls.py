@@ -22,6 +22,7 @@ from index import views
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
     url(r'^$', IndexView.as_view(), name="index"),
-    url(r'^ajaxfilter/$', views.ajaxchannel, name='ajaxfilter'),
+    # url(r'^$', views.index, name="index"),
+    url(r'^download_pre/$', views.download_pre, name='download_pre'),
     url(r'^ajaxdownload/$', views.ajaxchannel, name='ajaxdownload'),
 ]

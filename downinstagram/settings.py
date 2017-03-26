@@ -25,7 +25,7 @@ SECRET_KEY = ')v+iu4=50epw7)vn1a*p^m9=+$8@k%&f(xuz*t@m@lwaffetoh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -68,6 +68,7 @@ TEMPLATES = [
         },
     },
 ]
+APPEND_SLASH=False
 
 WSGI_APPLICATION = 'downinstagram.wsgi.application'
 
