@@ -11,7 +11,7 @@ from django.views.generic.base import View
 class IndexView(View):
     def get(self, request):
 
-        return render(request, "test.html")
+        return render(request, "index.html")
 
 
 def download_pre(request):
